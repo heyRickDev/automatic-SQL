@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic SQL Query</title>
+  </head>
+  <body>
+    <form onsubmit="adicionarRegistro(event)">
+      <fieldset>
+        <legend>Registros SQL</legend>
+        <div>
+          <div class="input-wrapper">
+          <input type="text" placeholder="NSU" name="nsu" required />
+          </div>
+          <div class="input-wrapper"><input type="text" placeholder="Autorização" name="aut" required /></div>
+          <div class="input-wrapper"><input type="text" placeholder="Credenciadora rede" name="crd" required /></div>
+          <div class="input-wrapper"> <input type="text" placeholder="Comprovante ID" name="cid" required /></div>
+          <div class="input-wrapper"><input type="text" placeholder="Operação ID" name="oid" required /></div>
+        </div>
+        <div>
+          <button>Registrar</button>
+          </div>
+      </fieldset>
+    </form>
+    <main>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
