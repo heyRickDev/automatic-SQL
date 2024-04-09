@@ -15,14 +15,17 @@ button {
   font-style: normal;
 }
 input {
-  color: rgb(255, 255, 255);
-  background-color: gray;
-  border: 1px solid rgb(255, 255, 255);
+  color: rgb(83, 78, 78);
+  background-color: lightgray;
+  border: 1px solid rgb(154, 152, 152);
   padding: 10px;
+  transition: ease-in 100ms;
 }
 input::placeholder {
+  color: rgba(83, 78, 78, 0.8);
+}
+input:hover {
   background-color: gray;
-  color: rgba(255, 255, 255, 0.7);
 }
 fieldset {
   margin: 10px auto 0;
