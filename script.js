@@ -31,7 +31,7 @@ const adicionarRegistro = (event) => {
     autorizacao: dadosDoFormulario.get("aut"),
     credenciadoraRede: dadosDoFormulario.get("crd"),
     comprovanteId: dadosDoFormulario.get("cid"),
-    operacaoId: dadosDoFormulario.get("oid")
+    operacaoId: dadosDoFormulario.get("oid"),
   }
   registros = [registro, ...registros]
 
@@ -40,6 +40,6 @@ const adicionarRegistro = (event) => {
   event.target.querySelector('[name="crd"]').value = ""
   event.target.querySelector('[name="cid"]').value = ""
   event.target.querySelector('[name="oid"]').value = ""
-  
+
   atualizarLista(registros)
 }
