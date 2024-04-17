@@ -5,21 +5,31 @@
 }
 body {
   color: rgb(255, 255, 255);
-  background-color: #0f0120;
+  background-color: #290965;
+}
+form {
+  background-color: #0c0118;
 }
 body,
 input,
-button {
+button,
+h1 {
   font-family: "Prompt", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+h1 {
+  text-align: center;
+}
 input {
-  color: rgb(83, 78, 78);
+  color: rgb(35, 33, 33);
   background-color: lightgray;
   border: 1px solid rgb(154, 152, 152);
-  padding: 10px;
-  transition: ease-in 100ms;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  transition: ease-in 200ms;
 }
 input::placeholder {
   color: rgba(83, 78, 78, 0.8);
@@ -28,17 +38,19 @@ input:hover {
   background-color: gray;
 }
 fieldset {
-  margin: 10px auto 0;
+  margin: 0 auto;
   width: 90%;
+  border: none;
 }
 .registration-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 .input-wrapper {
-  margin: 10px;
+  margin: 15px;
   width: 100%;
 }
 .input-wrapper input {
@@ -46,12 +58,22 @@ fieldset {
   height: 25px;
 }
 button {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto 20px;
+  font-weight: 600;
+  transition: ease-in 200ms;
+}
+button:hover {
+  background-color: #cac4d1;
 }
 main p {
-  width: 75%;
+  width: 80%;
   border: 1px solid rgba(255, 255, 255, 0.801);
   margin: 10px auto;
   padding: 10px auto;
+  font-size: 14px;
+  background-color: #17022e;
 }
